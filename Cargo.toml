@@ -1,0 +1,8 @@
+[package]
+name = "game_002_r"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Pin Bevy to 0.17.1 as requested
+bevy = "0.17.1"
