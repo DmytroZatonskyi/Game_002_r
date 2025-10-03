@@ -1,3 +1,36 @@
+# Game_002_r — minimal Bevy game
+
+Minimal Bevy (Rust) project used as a starting point.
+
+Bevy version: 0.17.1
+
+Prerequisites
+- Rust (recommended: install via rustup - https://rustup.rs)
+- Native system packages (Linux/Ubuntu family) for compiling Bevy.
+
+Minimal (fixes pkg-config / libudev needed by build):
+
+```bash
+sudo apt update
+sudo apt install -y pkg-config libudev-dev
+```
+
+Recommended (covers audio, windowing, and common native headers used by Bevy):
+
+```bash
+sudo ./scripts/install-deps-ubuntu.sh
+```
+
+Build & run
+
+```bash
+cargo build
+cargo run
+```
+
+Notes
+- `scripts/install-deps-ubuntu.sh` is provided for convenience and is safe to run multiple times. It is optional once the native packages are installed.
+- `target/` is excluded from the repo and will be created by Cargo during build.
 # Game_002_r — Bevy game
 
 This repository contains a minimal Bevy (Rust) application.
